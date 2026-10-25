@@ -1,0 +1,16 @@
+node_modules/
+.next/
+.local/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+*.log
+coverage/
+# Private runtime datasets and user exports
+src/data/
+*.ndjson
+*.pdf
+*.pem
+*.key
+.aws/

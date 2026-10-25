@@ -1,0 +1,156 @@
+[
+  {
+    "index": 1,
+    "id": "demo-application-1",
+    "company": "Example Labs",
+    "role": "Software Engineer",
+    "url": "https://jobs.example.test/roles/1",
+    "ats": "Other",
+    "source": "direct-company",
+    "submittedAt": "2026-01-02T00:00:00.000Z",
+    "status": "Submitted (Pending)"
+  },
+  {
+    "index": 2,
+    "id": "demo-application-2",
+    "company": "Sample Systems",
+    "role": "Platform Engineer",
+    "url": "https://jobs.example.test/roles/2",
+    "ats": "Other",
+    "source": "web-search",
+    "submittedAt": "2026-01-03T00:00:00.000Z",
+    "status": "Submitted (Pending)"
+  },
+  {
+    "index": 3,
+    "id": "demo-application-3",
+    "company": "Illustration Works",
+    "role": "Full Stack Engineer",
+    "url": "https://jobs.example.test/roles/3",
+    "ats": "Other",
+    "source": "direct-company",
+    "submittedAt": "2026-01-04T00:00:00.000Z",
+    "status": "Rejected"
+  },
+  {
+    "index": 4,
+    "id": "demo-application-4",
+    "company": "Demo Studio",
+    "role": "Software Engineer",
+    "url": "https://jobs.example.test/roles/4",
+    "ats": "Other",
+    "source": "web-search",
+    "submittedAt": "2026-01-05T00:00:00.000Z",
+    "status": "Interview"
+  },
+  {
+    "index": 5,
+    "id": "demo-application-5",
+    "company": "Fictional Cloud",
+    "role": "Platform Engineer",
+    "url": "https://jobs.example.test/roles/5",
+    "ats": "Other",
+    "source": "direct-company",
+    "submittedAt": "2026-01-06T00:00:00.000Z",
+    "status": "Offer"
+  },
+  {
+    "index": 6,
+    "id": "demo-application-6",
+    "company": "Example Robotics",
+    "role": "Full Stack Engineer",
+    "url": "https://jobs.example.test/roles/6",
+    "ats": "Other",
+    "source": "web-search",
+    "submittedAt": "2026-01-07T00:00:00.000Z",
+    "status": "Assessment Pending"
+  },
+  {
+    "index": 7,
+    "id": "demo-application-7",
+    "company": "Sample Data",
+    "role": "Software Engineer",
+    "url": "https://jobs.example.test/roles/7",
+    "ats": "Other",
+    "source": "direct-company",
+    "submittedAt": "2026-01-08T00:00:00.000Z",
+    "status": "Rejected"
+  },
+  {
+    "index": 8,
+    "id": "demo-application-8",
+    "company": "Demo Platform",
+    "role": "Platform Engineer",
+    "url": "https://jobs.example.test/roles/8",
+    "ats": "Other",
+    "source": "web-search",
+    "submittedAt": "2026-01-09T00:00:00.000Z",
+    "status": "Withdrawn"
+  },
+  {
+    "index": 9,
+    "id": "demo-application-9",
+    "company": "Illustration AI",
+    "role": "Full Stack Engineer",
+    "url": "https://jobs.example.test/roles/9",
+    "ats": "Other",
+    "source": "direct-company",
+    "submittedAt": "2026-01-10T00:00:00.000Z",
+    "status": "Submitted (Pending)"
+  },
+  {
+    "index": 10,
+    "id": "demo-application-10",
+    "company": "Example Networks",
+    "role": "Software Engineer",
+    "url": "https://jobs.example.test/roles/10",
+    "ats": "Other",
+    "source": "web-search",
+    "submittedAt": "2026-01-11T00:00:00.000Z",
+    "status": "Submitted (Pending)"
+  },
+  {
+    "index": 11,
+    "id": "demo-application-11",
+    "company": "Sample Tools",
+    "role": "Platform Engineer",
+    "url": "https://jobs.example.test/roles/11",
+    "ats": "Other",
+    "source": "direct-company",
+    "submittedAt": "2026-01-12T00:00:00.000Z",
+    "status": "Submitted (Pending)"
+  },
+  {
+    "index": 12,
+    "id": "demo-application-12",
+    "company": "Demo Services",
+    "role": "Full Stack Engineer",
+    "url": "https://jobs.example.test/roles/12",
+    "ats": "Other",
+    "source": "web-search",
+    "submittedAt": "2026-01-13T00:00:00.000Z",
+    "status": "Submitted (Pending)"
+  },
+  {
+    "index": 1,
+    "id": "demo-application-1",
+    "company": "Example Labs",
+    "role": "Software Engineer",
+    "url": "https://jobs.example.test/roles/1",
+    "ats": "Other",
+    "source": "direct-company",
+    "submittedAt": "2026-01-01T12:00:00Z",
+    "status": "Submitted (Pending)"
+  },
+  {
+    "index": 3,
+    "id": "demo-application-3",
+    "company": "Illustration Works",
+    "role": "Full Stack Engineer",
+    "url": "https://jobs.example.test/roles/3",
+    "ats": "Other",
+    "source": "direct-company",
+    "submittedAt": "2026-01-02T12:00:00Z",
+    "status": "Submitted (Pending)"
+  }
+]

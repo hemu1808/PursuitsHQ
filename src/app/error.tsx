@@ -1,0 +1,2 @@
+"use client";
+export default function ErrorPage({ reset }: { reset: () => void }) { return <div className="app-shell"><main style={{ maxWidth: 680, paddingTop: 100 }}><section className="card"><h1>We couldn’t open your workspace.</h1><p className="card-intro" style={{ marginTop: 20 }}>The local application snapshot may be unavailable or invalid. Check the project’s data files, then try again.</p><button className="button primary" onClick={reset}>Try again</button></section></main></div>; }

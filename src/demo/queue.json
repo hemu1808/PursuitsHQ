@@ -1,0 +1,54 @@
+{
+  "synthetic": true,
+  "applications": [],
+  "queue": [
+    {
+      "id": "demo-opportunity-1",
+      "company": "Example Careers",
+      "role": "Software Engineer",
+      "url": "https://jobs.example.test/opportunities/1",
+      "status": "Needs review",
+      "blocker": "",
+      "nextAction": "Replace this synthetic example with a verified posting and prepare your own materials.",
+      "location": "Example location",
+      "ats": "Other",
+      "postingCheckedAt": "2026-01-24T12:00:00Z"
+    },
+    {
+      "id": "demo-opportunity-2",
+      "company": "Sample Engineering",
+      "role": "Backend Engineer",
+      "url": "https://jobs.example.test/opportunities/2",
+      "status": "Needs review",
+      "blocker": "",
+      "nextAction": "Replace this synthetic example with a verified posting and prepare your own materials.",
+      "location": "Example location",
+      "ats": "Other",
+      "postingCheckedAt": "2026-01-24T12:00:00Z"
+    },
+    {
+      "id": "demo-opportunity-3",
+      "company": "Demo Infrastructure",
+      "role": "Platform Engineer",
+      "url": "https://jobs.example.test/opportunities/3",
+      "status": "Needs review",
+      "blocker": "",
+      "nextAction": "Replace this synthetic example with a verified posting and prepare your own materials.",
+      "location": "Example location",
+      "ats": "Other",
+      "postingCheckedAt": "2026-01-24T12:00:00Z"
+    },
+    {
+      "id": "demo-opportunity-4",
+      "company": "Illustration Research",
+      "role": "ML Engineer",
+      "url": "https://jobs.example.test/opportunities/4",
+      "status": "Held - requirements need review",
+      "blocker": "Synthetic eligibility check awaiting review.",
+      "nextAction": "Replace this synthetic example with a verified posting and prepare your own materials.",
+      "location": "Example location",
+      "ats": "Other",
+      "postingCheckedAt": "2026-01-24T12:00:00Z"
+    }
+  ]
+}

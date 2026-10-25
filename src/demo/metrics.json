@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "generatedAt": "2026-01-24T16:00:00Z",
+  "interviews": [
+    {
+      "id": "demo-application-3",
+      "status": "interview",
+      "occurredAt": "2026-01-12T12:00:00Z",
+      "note": "Synthetic example of an interview before a recorded rejection."
+    },
+    {
+      "id": "demo-application-4",
+      "status": "interview",
+      "occurredAt": "2026-01-15T12:00:00Z",
+      "note": "Synthetic interview event."
+    },
+    {
+      "id": "demo-application-5",
+      "status": "interview",
+      "occurredAt": "2026-01-16T12:00:00Z",
+      "note": "Synthetic interview preceding an offer."
+    }
+  ]
+}
