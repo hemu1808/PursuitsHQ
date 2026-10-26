@@ -1,0 +1,141 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled=0.9]{helvet}
+\renewcommand{\familydefault}{\sfdefault} % clean sans-serif, ATS-safe
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{needspace}
+
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\RaggedRight
+
+\newcommand{\sectionhead}[1]{%
+  \vspace{3pt}\noindent{\large\bfseries #1}\par
+  \vspace{-8pt}\noindent{\rule{\linewidth}{0.5pt}}\par
+
+}
+
+% ---- bullet list style ----
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{label=\textbullet, leftmargin=1em, itemsep=0pt, topsep=-2pt, parsep=0pt}
+
+% ---- entry header with right-aligned dates (single text line, no table) ----
+\newcommand{\entryheader}[2]{%
+  \needspace{3\baselineskip}
+  \noindent{\bfseries #1}\hfill{\itshape\small #2}\par
+}
+
+\newcommand{\projectheader}[2]{%
+  \needspace{3\baselineskip}%
+  \noindent{\bfseries\small \href{#2}{#1}}\hfill{\small \href{#2}{GitHub}}\par
+}
+
+\newcommand{\skillline}[2]{\noindent{\bfseries #1: }#2\par}
+
+\begin{document}
+
+% ---------------- Header ----------------
+\begin{center}
+  {\Large\bfseries Hemanth Kumar Mangalapurapu}\\
+  {New York, NY \textbullet\ No sponsorship required \textbullet\ (484) 320-7214 \textbullet\
+  \href{mailto:hemum1808@gmail.com}{hemum1808@gmail.com}\\
+  \href{https://linkedin.com/in/hemu1808}{linkedin.com/in/hemu1808} \textbullet\
+  \href{https://github.com/hemu1808}{github.com/hemu1808} \textbullet\
+  \href{https://hemu1808.github.io/swe/}{Portfolio}}
+\end{center}
+\vspace{-8pt}
+
+% ---------------- Summary ----------------
+\sectionhead{Summary}
+Frontend Developer with 5+ years of professional software engineering experience building interactive web applications, real-time collaboration interfaces, and high-performance APIs. Experienced in TypeScript, React.js, Next.js, Node.js, and cloud database architectures. Engineered dynamic application flows, WebSocket streaming layers, and multi-tenant authenticated workflows from design through production delivery.
+\vspace{-3pt}
+
+% ---------------- Skills ----------------
+\sectionhead{Technical Skills}
+\skillline{Frontend}{React.js, Next.js, TypeScript, JavaScript, Tailwind CSS, WebSockets, Redux}
+\skillline{Languages}{TypeScript, JavaScript, Python, Go (Golang), SQL, Bash}
+\skillline{Backend}{Node.js, Express, FastAPI, REST APIs, GraphQL, gRPC, Microservices}
+\skillline{AI \& Search}{LangChain, LangGraph, Model Context Protocol (MCP), RAG, Azure OpenAI, ChromaDB, Pinecone}
+\skillline{Databases \& Cloud}{PostgreSQL, DynamoDB, Redis, MongoDB, AWS (ECS, S3, Lambda), Azure, Docker, CI/CD}
+\skillline{Security \& Testing}{OAuth2, SSO, RBAC, JWT, Docker, CI/CD, Jest, React Testing Library}
+\vspace{-3pt}
+
+% ---------------- Experience ----------------
+\sectionhead{Experience}
+
+\entryheader{LeapGenAI | AI Python Engineer | Ashburn, VA}{May 2025 - Present}
+\begin{tightitemize}
+\item Built responsive clinical web interfaces and provider dashboards for Seismic, a 360-degree healthcare application serving doctors and patients, using React, TypeScript, and WebSockets to process real-time updates.
+\item Engineered modular UI component libraries and accessible design system patterns with Tailwind CSS and Next.js, enabling consistent medical records navigation while sustaining sub-100ms client rendering speeds across clinic workflows.
+\item Automated interactive clinical workflows and patient intake wizards using dynamic form schemas and LangGraph, enabling autonomous guided data capture and cutting doctor review turnaround by 40\% across care teams.
+\item Integrated healthcare microservices and streaming patient event feeds through secure REST and GraphQL endpoints, sustaining 99.99\% interface uptime and eliminating UI rendering freezes across live clinical interactions.
+\item Designed client-side caching and optimistic UI state management with React Query and Zustand, improving medical chart navigation throughput while eliminating blocking states across 500+ daily clinical sessions.
+\item Deployed containerized frontend web applications on Azure and CloudFront with Docker and CI/CD pipelines, delivering continuous UI feature enhancements from Figma design tokens through production delivery.
+\end{tightitemize}
+
+\entryheader{SmartRevIQ | Software Engineer | Delaware, DE}{Aug 2023 - Apr 2025}
+\begin{tightitemize}
+\item Built scalable asynchronous data pipelines and REST APIs with advanced SQL modeling on PostgreSQL and AWS DynamoDB, processing 1M+ rows of pricing transactions with ease at sub-3-second query latency.
+\item Designed a dynamic form-rendering engine with nested validation and reusable schemas, powering 12 new interactive workflow UI flows and surfacing margin analytics across operational dashboards.
+\item Automated enterprise pricing workflows by deploying interactive AI assistant interfaces with LangGraph, reducing administrative overhead by 80\% across recurring business operations and corporate customer workflows.
+\item Implemented SSO authentication and Role-Based Access Control UI workflows using JWT and OAuth2, securing multi-tenant access to sensitive enterprise data across 50+ corporate client organizations.
+\end{tightitemize}
+
+\entryheader{Speeler Technologies | Software Engineer | Hyderabad, India}{Apr 2021 -- Jul 2023}
+\begin{tightitemize}
+\item Built real-time collaborative web applications with React, TypeScript, and WebSockets, delivering concurrent-user state updates and reducing perceived UI latency by 50ms across live platform sessions.
+\item Architected GraphQL client layers with Apollo Client resolver caching and AWS AppSync, cutting P95 network payload latency by 30\% for a high-traffic e-commerce storefront.
+\item Engineered reusable UI component systems and design tokens with React and CSS modules, increasing developer sprint velocity by 35\% while sustaining strict WCAG 2.1 accessibility standards.
+\item Designed client-side performance monitoring and bundle-optimization pipelines with Webpack and Vite, cutting initial page load times by 45\% through automated code-splitting and asset prefetching.
+\item Developed comprehensive component and integration test suites with Jest and React Testing Library, achieving 90\%+ code coverage while eliminating critical regression defects across customer purchase checkout flows.
+\item Migrated monolithic frontend single-page applications to containerized micro-frontends with Docker on AWS ECS, achieving zero-downtime releases across a 50K+ active user base.
+\end{tightitemize}
+\vspace{10pt}
+
+
+% ---------------- Projects ----------------
+\sectionhead{Projects}
+
+\projectheader{ShuttleNow - Real-Time Transit Booking App | MongoDB, Express.js, React, Node.js, Redis}{https://github.com/hemu1808/ShuttleNow}
+\begin{tightitemize}
+\item Architected a booking engine with Redis Redlock leases and optimistic concurrency control, cutting seat double-booking conflicts from 12\% to 0.5\% under burst load.
+\item Delivered seat-inventory updates to 1,000+ concurrent clients in under 50ms via a bidirectional WebSocket layer and MongoDB change-stream diffing instead of polling.
+\item Integrated Stripe payments across React web and React Native clients, securing webhook verification and asynchronous payment confirmation through serverless functions and PCI-compliant handling.
+\end{tightitemize}
+
+\projectheader{HemGPT - Enterprise RAG Knowledge Base | Python, LangChain, ChromaDB, Pinecone, FastAPI, React}{https://github.com/hemu1808/H_ollama_gpt}
+\begin{tightitemize}
+\item Built local and cloud RAG backends with Ollama, DSPy, ChromaDB, and Pinecone, combining dense retrieval, BM25, Reciprocal Rank Fusion, and cross-encoder reranking to improve retrieval.
+\item Architected asynchronous document ingestion with FastAPI and Celery, using document-specific chunking to embed a 10K document corpus in under 10 minutes without blocking the UI.
+\item Deployed Server-Sent Events streaming for the inference layer, delivering incremental responses through the application interface to eliminate perceived wait time for users.
+\end{tightitemize}
+
+\projectheader{Deploy.sh - Distributed Container Orchestration Engine | Go, gRPC, PostgreSQL, Docker, Grafana}{https://github.com/hemu1808/Deploysh}
+\begin{tightitemize}
+\item Engineered a distributed Go control plane with gRPC heartbeats and sliding-window health checks, cutting node-failure detection latency to under 30ms across simulated cluster conditions.
+\item Developed a First-Fit Decreasing bin-packing scheduler, raising simulated hardware utilization from 50\% to 80\% across more than 100 container-placement scenarios.
+\item Implemented PostgreSQL Write-Ahead Logging with fsync durability, preserving data across simulated controller failures and restoring control-plane operation in under 5 seconds.
+\item Created a CLI and Grafana dashboard with RESTful APIs, exposing real-time cluster state, node health, and operational metrics for distributed container infrastructure.
+\end{tightitemize}
+
+\projectheader{Sunx - AI-Powered Radiography Prediction \& Clinical Decision Support | Python, PyTorch, FastAPI, Next.js}{https://github.com/hemu1808/SunX}
+\begin{tightitemize}
+\item Built and fine-tuned a DenseNet-121 vision model achieving approximately 80\% accuracy and 0.91 AUC across 14 chest X-ray pathology classes, served via NVIDIA Triton Inference Server.
+\item Engineered a LangChain and pgvector RAG layer with 1536-dimensional embeddings, grounding treatment recommendations in clinical guidelines including AHA/ACC and IDSA/ATS guidance.
+\item Designed HIPAA-aware DICOM ingestion and ETL with pydicom, MONAI, PHI anonymization, and Celery-Redis queues, keeping inference non-blocking during medical-image processing.
+\item Developed a Next.js and TypeScript radiography interface with Cornerstone.js, delivering WebGL-based pan, zoom, and window-level controls for clinical image interaction.
+\end{tightitemize}
+
+% ---------------- Education ----------------
+\sectionhead{Education}
+\entryheader{Auburn University at Montgomery - Master of Science, Computer Science}{Aug 2023 - May 2025}
+\entryheader{MLRIT - Bachelor of Technology, Computer Science \& Engineering}{Jul 2018 - Aug 2022}
+
+\end{document}

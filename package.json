@@ -8,7 +8,10 @@
     "build": "next build --webpack",
     "start": "next start -p 3001",
     "test": "node --experimental-strip-types --test tests/analytics.test.mjs tests/workspace.test.mjs tests/rename.test.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "pipeline:help": "node --experimental-strip-types pipeline/cli.ts help",
+    "pipeline:tailor": "node --experimental-strip-types pipeline/cli.ts tailor",
+    "pipeline:all": "node --experimental-strip-types pipeline/cli.ts all"
   },
   "dependencies": {
     "clsx": "^2.1.1",

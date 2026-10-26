@@ -1,0 +1,143 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled=0.9]{helvet}
+\renewcommand{\familydefault}{\sfdefault} % clean sans-serif, ATS-safe
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{needspace}
+
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\RaggedRight
+
+\newcommand{\sectionhead}[1]{%
+  \vspace{3pt}\noindent{\large\bfseries #1}\par
+  \vspace{-8pt}\noindent{\rule{\linewidth}{0.5pt}}\par
+
+}
+
+% ---- bullet list style ----
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize]{label=\textbullet, leftmargin=1em, itemsep=0pt, topsep=-2pt, parsep=0pt}
+
+% ---- entry header with right-aligned dates (single text line, no table) ----
+\newcommand{\entryheader}[2]{%
+  \needspace{3\baselineskip}
+  \noindent{\bfseries #1}\hfill{\itshape\small #2}\par
+}
+
+\newcommand{\projectheader}[2]{%
+  \needspace{3\baselineskip}%
+  \noindent{\bfseries\small \href{#2}{#1}}\hfill{\small \href{#2}{GitHub}}\par
+}
+
+\newcommand{\skillline}[2]{\noindent{\bfseries #1: }#2\par}
+
+\begin{document}
+
+% ---------------- Header ----------------
+\begin{center}
+  {\Large\bfseries Hemanth Kumar Mangalapurapu}\\
+  {New York, NY (Open to Relocation \textbullet\ No sponsorship required) \textbullet\ (484) 320-7214 \textbullet\
+  \href{mailto:hemum1808@gmail.com}{hemum1808@gmail.com}\\
+  \href{https://linkedin.com/in/hemu1808}{linkedin.com/in/hemu1808} \textbullet\
+  \href{https://github.com/hemu1808}{github.com/hemu1808} \textbullet\
+  \href{https://hemu1808.github.io/swe/}{Portfolio}}
+\end{center}
+\vspace{-8pt}
+
+% ---------------- Summary ----------------
+\sectionhead{Summary}
+AI Software Engineer with 5+ years of professional software engineering experience, building production-grade Python backend systems and enterprise LLM applications. Experienced in Retrieval-Augmented Generation (RAG), agentic workflows, distributed APIs, and cloud-native infrastructure. Built scalable AI platforms, high-throughput backend services, and end-to-end applications from model integration through production deployment.
+\vspace{-3pt}
+
+% ---------------- Skills ----------------
+\sectionhead{Technical Skills}
+\skillline{Generative AI \& LLMs}{Advanced RAG, LangChain, LangGraph, Model Context Protocol (MCP), DSPy}
+\skillline{Machine Learning}{PyTorch, TensorFlow, MONAI, CNN (DenseNet-121), NVIDIA Triton Inference Server}
+\skillline{Languages}{Go (Golang), Python, TypeScript, React.js, Next.js, SQL}
+\skillline{Backend \& APIs}{Node.js, Express, FastAPI, REST APIs, GraphQL, gRPC, WebSockets}
+\skillline{Databases}{PostgreSQL, DynamoDB, MongoDB, Redis, ChromaDB, Pinecone}
+\skillline{Cloud \& DevOps}{AWS (Lambda, ECS, S3, IAM, CloudWatch), Azure, Docker, CI/CD, Terraform, Grafana, Kafka}
+\vspace{-3pt}
+
+% ---------------- Experience ----------------
+\sectionhead{Experience}
+
+\entryheader{LeapGenAI | AI Python Engineer | Ashburn, VA}{May 2025 - Present}
+\begin{tightitemize}
+\item Built AI-powered backend services for Seismic, a 360-degree healthcare application serving doctors and patients, supporting clinical workflows, patient data, billing, and claims-related processes with Python, FastAPI, and Azure OpenAI.
+\item Developed HIPAA-aware RAG pipelines for clinical and operational knowledge, using LangChain, document embeddings, and vector databases to retrieve relevant medical information while minimizing exposure of sensitive patient data.
+\item Automated multi-step clinical workflows and patient-document analysis using LangGraph and MCP, supporting downstream reasoning, care-related operations, and healthcare business processes.
+\item Integrated healthcare data and external systems through EHR/FHIR-based workflows and APIs, enabling structured exchange of patient records and clinical information across platform services.
+\item Designed AI services for medical-record processing and diagnosis-support workflows, with request routing, token controls, structured logging, and performance monitoring to improve reliability and traceability.
+\item Implemented safeguards around PHI and patient data handling, including access controls, secure service boundaries, and healthcare-oriented compliance practices aligned with HIPAA requirements.
+\item Deployed and maintained containerized healthcare services on Azure using Docker, Terraform, and GitHub Actions, owning features from backend API development through production deployment.
+
+\end{tightitemize}
+
+\entryheader{SmartRevIQ | Software Engineer | Delaware, DE}{Aug 2023 - Apr 2025}
+\begin{tightitemize}
+  \item Built scalable asynchronous data pipelines and REST APIs with advanced SQL modeling on PostgreSQL and AWS DynamoDB, processing 1M+ rows of pricing transactions with ease at sub-3-second query performance.
+  \item Designed a dynamic form-rendering engine with nested validation and reusable schemas, powering new pricing UI flows across the platform and Built Dashboards with drill-down filtering, surfacing pricing analytics to identify margin leakage.
+  \item Automated enterprise pricing workflows by deploying AI agents with LangGraph, reducing operational overhead by 80\%.
+  \item Implemented SSO authentication and Role-Based Access Control(RBAC), securing multi-tenant access to sensitive data.
+\end{tightitemize}
+
+\entryheader{Speeler Technologies | Software Engineer | Hyderabad, India}{Apr 2021 -- Jul 2023}
+\begin{tightitemize}
+  \item Architected and led the redesign of GraphQL backend services for a high-traffic e-commerce platform, implementing DataLoader-style resolver batching - AWS AppSync response caching to cut P95 latency by 30\%.
+  \item Designed a multi-tenant DynamoDB single-table architecture with sparse GSIs and composite sort keys, eliminating hot-partition bottlenecks and sustaining sub-10ms reads under high-cardinality access patterns, ensuring idempotency.
+  \item Engineered a fault-tolerant, event-driven image-processing pipeline on AWS Lambda and SQS with dead-letter queue handling, cutting infrastructure costs by 70\% while processing 2M+ monthly events at 99.99\% data durability.
+  \item Built a real-time collaborative Business Automation \& Data Processing E-Commerce Platform with React and WebSockets for concurrent users, reducing perceived latency by 50ms.
+  \item Migrated EC2 workloads to AWS ECS Fargate with Blue/Green deployments and container-level health checks wired into CI/CD, achieving zero-downtime releases across a 50K+ user production system.
+  \item Created a TensorFlow-based demand-forecasting model for e-commerce inventory planning, visualizing forecast trends and accuracy with Matplotlib for stakeholder reporting.
+\end{tightitemize}
+\vspace{10pt}
+
+
+% ---------------- Projects ----------------
+\sectionhead{Projects}
+
+\projectheader{HemGPT - Enterprise RAG Knowledge Base | Python, LangChain, ChromaDB, Pinecone, FastAPI, React}{https://github.com/hemu1808/H_ollama_gpt}
+\begin{tightitemize}
+  \item Built a dual-mode Retrieval-Augmented Generation platform supporting both a fully local, privacy-first backend (Ollama, DSPy, ChromaDB) and a cloud backend (Pinecone), using a hybrid retrieval - dense vector search, BM25 sparse retrieval, and Reciprocal Rank Fusion re-ranking with a cross-encoder - to cut query response time.
+  \item Architected an async ingestion pipeline with FastAPI and Celery workers using per-document-type chunking, Chain-of-Thought to maximize context relevance, embedding a 10K document corpus in under 10 minutes without blocking the UI.
+  \item Deployed the inference layer with Server-Sent Events (SSE) streaming to eliminate perceived wait time for end users.
+\end{tightitemize}
+
+\projectheader{Deploy.sh - Distributed Container Orchestration Engine | Go, gRPC, PostgreSQL, Docker, Grafana}{https://github.com/hemu1808/Deploysh}
+\begin{tightitemize}
+  \item Engineered a custom distributed control plane in Go with a high-frequency gRPC heartbeat and sliding-window health state machine, cutting node-failure detection latency from \textasciitilde2s to under 30ms.
+  \item Developed a bin-packing scheduler (First-Fit Decreasing heuristic) that raised simulated hardware utilization from 50\% to 80\%, validated against 100+ container placement scenarios.
+  \item Implemented a Write-Ahead Log in PostgreSQL with fsync-based durability, guaranteeing zero data loss across simulated controller-failover scenarios with recovery in under 5 seconds.
+  \item Created a CLI and a Grafana dashboard exposing real-time cluster state and node metrics via RESTful API.
+\end{tightitemize}
+
+\projectheader{Sunx - AI-Powered Radiography Prediction \& Clinical Decision Support | Python, PyTorch, FastAPI, Next.js}{https://github.com/hemu1808/SunX}
+\begin{tightitemize}
+  \item Built and fine-tuned a DenseNet-121 vision model achieving \textasciitilde80\% classification accuracy and an AUC of 0.91 across 14 chest X-ray pathology classes, served via NVIDIA Triton Inference Server for downstream clinical reasoning.
+  \item Engineered a Retrieval-Augmented Generation layer using LangChain and pgvector (1536-dimensional embeddings) to ground treatment recommendations in real clinical guidelines (AHA/ACC, IDSA/ATS).
+  \item Designed a HIPAA-aware DICOM ingestion and ETL (pydicom, MONAI) with PHI anonymization, backed by an async Celery-Redis task queue to keep inference non-blocking.
+  \item Developed a Next.js/TypeScript frontend with a Cornerstone.js supporting WebGL-based pan/zoom/window-leveling.
+\end{tightitemize}
+
+\projectheader{ShuttleNow - Real-Time Transit Booking App | MongoDB, Express.js, React, Node.js, Redis}{https://github.com/hemu1808/ShuttleNow}
+\begin{tightitemize}
+  \item Architected a fault-tolerant booking engine that cut seat double-booking conflicts from a 12\% rate under burst load to 0.5\%, using Redis Redlock distributed locking with lease expiration and Optimistic Concurrency Control.
+  \item Delivered real-time seat-inventory updates to 1,000+ concurrent clients at under 50ms latency via a bidirectional WebSocket layer instead of polling backed by MongoDB change-stream event diffing.
+  \item Integrated Stripe payments with PCI-compliant webhook verification across both the React web app and a React Native mobile client, using serverless functions for asynchronous payment confirmation.
+\end{tightitemize}
+
+% ---------------- Education ----------------
+\sectionhead{Education}
+\entryheader{Auburn University at Montgomery - Master of Science, Computer Science}{Aug 2023 - May 2025}
+\entryheader{MLRIT - Bachelor of Technology, Computer Science \& Engineering}{Jul 2018 - Aug 2022}
+
+\end{document}
